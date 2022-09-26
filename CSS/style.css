@@ -80,6 +80,7 @@
     padding: 20px 122px;
     border-radius: 10px;
     display: inline-block;
+    box-shadow: 2px 3px 4px rgba(0,0,0,1.0);
     font-size: 1.3em;
   }
   .nav{
@@ -87,6 +88,40 @@
   }
   .nav ul{
     display: none;
+  }
+
+  .Filmes {
+
+  	font: 700 4em/1 "Oswald", sans-serif;
+  	letter-spacing: 0;
+  	padding: .25em 0 .325em;
+	  display: block;
+	  margin: 0 auto;
+  	text-shadow: 0 0 80px rgba(255,255,255,.5);
+
+/* Clip Background Image */
+
+	  background: url(../img/animated-text-fill\ \(1\).png) repeat-y;
+	  -webkit-background-clip: text;
+	  background-clip: text;
+
+/* Animate Background Image */
+
+	  -webkit-text-fill-color: transparent;
+	  -webkit-animation: aitf 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+	  -webkit-transform: translate3d(0,0,0);
+	  -webkit-backface-visibility: hidden;
+  }
+
+  @-webkit-keyframes aitf {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+  }
+  .Filmes{
+    text-align: center;
   }
   .cards{
     padding: 30px 20px;
@@ -163,7 +198,7 @@
   
     #welcome h1{
       text-align: start;
-      margin: 4em 0 0;
+      margin: 2em 0 0;
       font-size: 65px;
       font-weight: bold;
       color: #FFC200;
@@ -279,14 +314,6 @@
   /* para desktop */
     @media screen and (min-width: 1200px){
   
-    /* body{
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-      position: relative;
-      font-size: 20px;
-    } */
     header {
       position: fixed;
       top: 0;
@@ -296,14 +323,14 @@
       margin: 0 200px;
       padding: 20px 20px;
       background-image: 
-      linear-gradient(to bottom, rgb(79, 3, 3), rgb(79, 3, 3));
+      linear-gradient(to bottom, rgb(79, 3, 3), rgb(32, 2, 2));
     }
     .nav{
       width: 30%;
       padding: 0;
     }
     main{
-      padding: 139px 200px;
+      padding: 140px 200px 0px
     }
     #welcome{
       padding: 1px 250px;
@@ -328,7 +355,7 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      padding: 50px 220px;
+      padding: 30px 220px;
       background-color: #000000;
       background-size: 30%;
       background-position: top center;
@@ -363,7 +390,7 @@
     .copyright{
       display: flex;
       align-items: flex-start;
-      padding: 10px 220px;
+      padding: 10px 220px 20px;
       font-size: 12px;
     }
   }
