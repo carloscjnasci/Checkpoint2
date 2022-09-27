@@ -1,396 +1,467 @@
 @import url('http://fonts.cdnfonts.com/css/roboto');
 
 /* variavel */
-:root{
-    --primary: #FFC200;
-    --secondary: #000000;
-  }
-  
-  /* resetando */
-  body,p,a,ul,li{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-  }
-  li{
-    list-style-type: none;
-  }
-  
-  /* base estilo */
-  body{
-    /* background-image: url(../img/banner-movie1.jpg);
-    background-repeat: no-repeat; */
-    background-color: #000000;
-    overflow-x: hidden;
-    font-family: 'Roboto', sans-serif;
-  }
-  header {
-    /* position: relative; */
-    display: flex;
-    justify-content: space-between;
-    padding: 25px 20px;
-    background-image: 
-    linear-gradient(to bottom, rgb(79, 3, 3), rgba(79, 3, 3, 0.4));
+:root {
+  --primary: #FFC200;
+  --secondary: #000000;
+}
+
+/* resetando */
+body, p, a, ul, li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* base estilo */
+body {
+  background-color: #000000;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  /* position: relative; */
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 20px;
+  background-image:
+  linear-gradient(to bottom, rgb(79, 3, 3), rgba(79, 3, 3, 0.4));
+}
+
+/* fontes */
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: url("assets/fonts/Roboto.ttf") format("ttf"),
+}
+
+h1, h2 {
+  color: #DDDBFF;
+  font-weight: normal;
+  line-height: 1.4em;
+}
+
+p, a, li {
+  color: #ffffff;
+  line-height: 1.4em;
+  font-size: 1.2em;
+}
+
+h1 {
+  font-size: 1.2em;
+}
+
+h3 {
+  color: #000000;
+  font-size: 3.6em;
+}
+
+/* mobile styles */
+section {
+  background-image: url(../img/banner-movie.jpg);
+  background-repeat: no-repeat;
+}
+
+#welcome {
+  padding: 30px 13%;
+  height: 800px;
+}
+
+#welcome h1 {
+  text-align: left;
+  text-shadow: 2px 3px 4px rgba(0, 0, 0, 1.0);
+}
+
+#welcome p {
+  text-align: left;
+  text-shadow: 2px 3px 4px rgba(0, 0, 0, 1.0);
+}
+
+.botao {
+  background-color: rgb(190, 3, 3);
+  color: #ffffff;
+  margin-top: 10px;
+  padding: 20px 122px;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 1.0);
+  font-size: 1.3em;
+}
+
+.botao:hover {
+  background: #830101;
+}
+
+.nav {
+  margin: 0 20px;
+}
+
+.nav ul {
+  display: none;
+}
+
+#Filmes {
+
+  font: 700 4em/1 "Oswald", sans-serif;
+  letter-spacing: 0;
+  padding: .25em 0 .325em;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 0 0 80px rgba(255, 255, 255, .5);
+
+  /* Clip Background Image */
+
+  background: url(../img/animated-text-fill\ \(1\).png) repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  /* Animate Background Image */
+
+  -webkit-text-fill-color: transparent;
+  animation: aitf 80s linear infinite;
+
+  /* Activate hardware acceleration for smoother animations */
+
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+}
+
+@keyframes aitf {
+  0% {
+    background-position: 0% 50%;
   }
 
-  /* fontes */
-  @font-face {
-    font-family: 'Roboto', sans-serif;
-    src: url("assets/fonts/Roboto.ttf") format("ttf"),
+  100% {
+    background-position: 100% 50%;
   }
-  h1,h2{
-    color: #DDDBFF;
-    font-weight: normal;
-    line-height: 1.4em;
-  }
-  p,a,li{
-    color: #ffffff;
-    line-height: 1.4em;
-    font-size: 1.2em;
-  }
-  h1{
-    font-size: 1.2em;
-  }
-  h3{
-    color: #000000;
-    font-size: 3.6em;
+}
+
+#Filmes {
+  text-align: center;
+}
+
+.cards {
+  padding: 30px 20px;
+  background: rgb(234, 234, 234);
+}
+
+.cards h1 {
+  text-align: center;
+  font-size: 60px;
+  text-shadow: 4px rgba(0, 0, 0, 1.0);
+  color: #000000;
+  margin-top: auto;
+}
+
+.cards h3 {
+  text-align: center;
+}
+
+.cards ul {
+  margin: 40px 0;
+}
+
+.cards li {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  grid-column: span 4;
+  text-align: center;
+}
+
+.cards img {
+  height: 100%;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+.cards p {
+  text-align: center;
+  margin: 0 20px;
+}
+
+.boxcards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.boxcards {
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  padding: 20px 20px;
+  background-color: #171717;
+  background-size: 40%;
+  background-position: top center;
+}
+
+footer .desenvolvedores {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.7em;
+}
+
+footer .social {
+  grid-column: 7/9;
+  display: flex;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+footer li {
+  display: flex;
+  margin: 0 6px;
+}
+
+footer img {
+  width: 24px;
+}
+
+.copyright {
+  grid-column: 1/4;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9em;
+}
+
+/* para Celular */
+@media only screen and (max-width: 465px) and (min-width: 375px) {
+
+  #welcome h1 {
+    text-align: start;
+    margin: 2em 0 0;
+    font-size: 65px;
+    font-weight: bold;
+    color: #FFC200;
   }
 
-  /* mobile styles */
-  section{
-    background-image: url(../img/banner-movie.jpg);
-    background-repeat: no-repeat;
-  }
-  #welcome{
-    padding: 30px 13%;
-    height: 800px;
-  }
-  #welcome h1{
-    text-align: left;
-    text-shadow: 2px 3px 4px rgba(0,0,0,1.0);
-  }
-  #welcome p{
-    text-align: left;
-    text-shadow: 2px 3px 4px rgba(0,0,0,1.0);
-  }
-  .botao{
-    background-color:rgb(165, 3, 3);
-    color: #ffffff;
-    margin-top: 10px;
-    padding: 20px 122px;
-    border-radius: 10px;
-    display: inline-block;
-    box-shadow: 2px 3px 4px rgba(0,0,0,1.0);
-    font-size: 1.3em;
-  }
-  .nav{
-    margin: 0 20px;
-  }
-  .nav ul{
-    display: none;
+  .welcome-text p {
+    text-align: center;
+    font-size: 20px;
   }
 
-  #Filmes {
-
-  	font: 700 4em/1 "Oswald", sans-serif;
-  	letter-spacing: 0;
-  	padding: .25em 0 .325em;
-	  display: block;
-	  margin: 0 auto;
-  	text-shadow: 0 0 80px rgba(255,255,255,.5);
-
-/* Clip Background Image */
-
-	  background: url(../img/animated-text-fill\ \(1\).png) repeat-y;
-	  -webkit-background-clip: text;
-	  background-clip: text;
-
-/* Animate Background Image */
-
-	  -webkit-text-fill-color: transparent;
-	  animation: aitf 80s linear infinite;
-
-/* Activate hardware acceleration for smoother animations */
-
-	  transform: translate3d(0,0,0);
-	  backface-visibility: hidden;
-  }
-
-  @keyframes aitf {
-    0% { background-position: 0% 50%; }
-    100% { background-position: 100% 50%; }
-  }
-  #Filmes{
+  .welcome-text a {
     text-align: center;
   }
-  .cards{
-    padding: 30px 20px;
-    background: rgb(234, 234, 234);
-  }
-  .cards h1{
-    text-align: center;
-    font-size: 60px;
-    text-shadow: 4px rgba(0,0,0,1.0);
-    color: #000000;
-    margin-top: auto;
-  }
-  .cards h3{
-    text-align: center;
-  }
-  .cards ul{
-    margin: 40px 0;
-  }
-  .cards li{
-    padding: 10px;
-    background: rgba(0,0,0,0.2);
-    grid-column: span 4;
-    text-align: center;
-  }
-  .cards img{
-    height: 100%;
-    margin: 10px auto;
-    border-radius: 10px;
-  }
-  .cards p{
-    text-align: center;
-    margin: 0 20px;
-  }
-  .boxcards{
+
+  footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-size: 20%;
   }
-  .boxcards{
+
+  .copyright {
+    background-color: #171717;
+    padding: 10px 0 20px 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
   }
-  footer{
-    padding: 20px 20px;
-    background-color: #171717;
-    background-size: 40%;
+
+  .desenvolvedores p {
+    font-size: 15px;
+  }
+
+  .responsaveis p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+  }
+
+  .copyright {
+    font-size: 12px;
+  }
+}
+
+/* para tablet e laptop */
+@media only screen and (min-width: 768px) {
+
+  body {
+    font-size: 18px;
+  }
+
+  .convite {
+    margin: 20px 0;
+  }
+
+  .nav {
+    padding: 0 20px;
+  }
+
+  .nav h1 {
+    grid-column: 1/3;
+  }
+
+  .nav ul {
+    display: flex;
+    grid-column: 6/9;
+    justify-content: flex-end;
+    align-self: center;
+    font-size: 12px;
+  }
+
+  .nav li {
+    margin-left: 20px;
+  }
+
+  .welcome-text {
+    grid-column: 1/5;
+    align-self: center;
+  }
+
+  #welcome {
+    padding-bottom: 40px;
+  }
+
+  .boxcards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #000000;
+    background-size: 30%;
     background-position: top center;
   }
-  footer .desenvolvedores{
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 0.7em;
-  }
-  footer .social{
-    grid-column: 7/9;
-    display: flex;
-    justify-content: flex-start;
-    gap: 5px;
-  }
-  footer li{
-    display: flex;
-    margin: 0 6px;
-  }
-  footer img{
-    width: 24px;
-  }
-  .copyright{
-    grid-column: 1/4;
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 0.9em;
-  }
-  
-  /* para Celular */
-  @media only screen and (max-width: 465px) and (min-width: 375px){
-  
-    #welcome h1{
-      text-align: start;
-      margin: 2em 0 0;
-      font-size: 65px;
-      font-weight: bold;
-      color: #FFC200;
-    }
-    .welcome-text p{
-      text-align: center;
-      font-size: 20px;
-    }
-    .welcome-text a{
-      text-align: center;
-    }
-    footer{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      background-size: 20%;
-    }
-    .copyright{
-      background-color: #171717;
-      padding: 10px 0 20px 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .desenvolvedores p{
-      font-size: 15px;
-    }
-    .responsaveis p{
-      color: rgba(255, 255, 255, 0.5);
-      font-size: 12px;
-    }
-    .copyright{
-      font-size: 12px;
-    }
-  }
-  
-  /* para tablet e laptop */
-  @media only screen and (min-width: 768px){
-  
-    body{
-      font-size: 18px;
-    }
-    .convite{
-      margin: 20px 0;
-    }
-    .nav{
-      padding: 0 20px;
-    }
-    .nav h1{
-      grid-column: 1/3;
-    }
-    .nav ul{
-      display: flex;
-      grid-column: 6/9;
-      justify-content: flex-end;
-      align-self: center;
-      font-size: 12px;
-    }
-    .nav li{
-      margin-left: 20px;
-    }
-    .welcome-text{
-      grid-column: 1/5;
-      align-self: center;
-    }
-    #welcome{
-      padding-bottom: 40px;
-    }
-    .boxcards{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 100px;
-    }
-    footer{
-      display: flex;
-      flex-direction: row;
 
-      justify-content: space-between;
-      padding: 10px 20px;
-      background-color: #000000;
-      background-size: 30%;
-      background-position: top center;
-    }
-    .rodape1{
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    .rodape2{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .rodape3{
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-    }
-    .desenvolvedores p{
-      font-size: 15px;
-    }
-    .responsaveis p{
-      color: rgba(255, 255, 255, 0.5);
-      font-size: 12px;
-    }
-    .copyright{
-      font-size: 12px;
-    }
+  .rodape1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
-  /* para desktop */
-    @media screen and (min-width: 1200px){
-  
-    header {
-      position: fixed;
-      top: 0;
-      width: 77%;
-      display: flex;
-      justify-content: space-between;
-      margin: 0 200px;
-      padding: 20px 20px;
-      background-image: 
+
+  .rodape2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rodape3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .desenvolvedores p {
+    font-size: 15px;
+  }
+
+  .responsaveis p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+  }
+
+  .copyright {
+    font-size: 12px;
+  }
+}
+
+/* para desktop */
+@media screen and (min-width: 1200px) {
+
+  header {
+    position: fixed;
+    top: 0;
+    width: 77%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 200px;
+    padding: 20px 20px;
+    background-image:
       linear-gradient(to bottom, rgb(79, 3, 3), rgb(32, 2, 2));
-    }
-    .nav{
-      width: 30%;
-      padding: 0;
-    }
-    main{
-      padding: 140px 200px 0px
-    }
-    #welcome{
-      padding: 1px 250px;
-      height: 975px;
-    }
-    .welcome-text h1{
-      font-size: 72px;
-      color: #FFC200;
-    }
-    .convite{
-      font-size: 24px;
-      margin: 20px 0;
-    }
-    .boxcards{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 100px;
-    }
-    footer{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      padding: 30px 220px;
-      background-color: #000000;
-      background-size: 30%;
-      background-position: top center;
-    }
-    .rodape1{
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    .rodape2{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .rodape3{
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-    }
-    .social{
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-    }
-    .desenvolvedores p{
-      font-size: 20px;
-    }
-    .responsaveis p{
-      color: rgba(255, 255, 255, 0.5);
-      font-size: 15px;
-    }
-    .copyright{
-      display: flex;
-      align-items: flex-start;
-      padding: 10px 220px 20px;
-      font-size: 12px;
-    }
   }
+
+  .nav {
+    width: 30%;
+    padding: 0;
+  }
+
+  main {
+    padding: 140px 200px 0px
+  }
+
+  #welcome {
+    padding: 1px 250px;
+    height: 975px;
+  }
+
+  .welcome-text h1 {
+    font-size: 72px;
+    color: #FFC200;
+  }
+
+  .convite {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+
+  .boxcards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 220px;
+    background-color: #000000;
+    background-size: 30%;
+    background-position: top center;
+  }
+
+  .rodape1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .rodape2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rodape3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .desenvolvedores p {
+    font-size: 20px;
+  }
+
+  .responsaveis p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 15px;
+  }
+
+  .copyright {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 220px 20px;
+    font-size: 12px;
+  }
+}
