@@ -90,7 +90,7 @@
     display: none;
   }
 
-  .Filmes {
+  #Filmes {
 
   	font: 700 4em/1 "Oswald", sans-serif;
   	letter-spacing: 0;
@@ -120,7 +120,7 @@
     0% { background-position: 0% 50%; }
     100% { background-position: 100% 50%; }
   }
-  .Filmes{
+  #Filmes{
     text-align: center;
   }
   .cards{
