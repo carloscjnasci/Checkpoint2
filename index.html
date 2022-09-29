@@ -7,27 +7,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/cards.css">
-    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/nav.nav.css">
     <link rel="icon" href="img/logostarvideos20x20.png">
     <script src="https://kit.fontawesome.com/e56ea0e73a.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="controles.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <title>Star Vídeos</title>
   </head>
 
 <body>
  
-  <header class="d-flex justify-content-center py-3">
-    <div class="logo">
+  <!-- <header class="d-flex justify-content-center py-3"> -->
+    <div class="logo"></div>
+    <nav id="menu" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <img src="img/logostarvideos2.png" width="200" />
-    </div>
-    <nav class="nav">
-      <ul>
-        <li><a href="#Home">Home</a></li>
-        <li><a href="#Filmes">Items</a></li>
-        <li><a href="#rodape">About Us</a></li>
-        <li><a href="forms.html">Login</a></li>
-      </ul>
-    </nav>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="#welcome">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#Filmes">Items</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#rodape">About Us</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="forms.html">Login</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
   </header>
   
   <main>
@@ -37,7 +54,7 @@
       <h1>Star Vídeos</h1>
       <p>Bem-vindos a maior experiência em vídeos e filmes do mercado streaming.</p>
       <div class="button">
-      <a href="#Items" class="botao">Explorar</a>
+      <a href="#Filmes" class="botao">Explorar</a>
       </div>
     </div>
   </section>
@@ -63,7 +80,7 @@
                 <i class="fa-regular fa-clock"></i>
               88 min
               </span>
-              <a href="#" class="buttonitens">saiba mais</a>
+              <a href="filmes.html#minions" class="buttonitens">saiba mais</a>
             </figcaption>
             <a href="https://youtu.be/oZ_X5Yup-TQ"></a>
         </div>
@@ -83,7 +100,7 @@
                 <i class="fa-regular fa-clock"></i>
               99 min
               </span>
-              <a href="#" class="buttonitens">saiba mais</a>
+              <a href="filmes.html#orfa" class="buttonitens">saiba mais</a>
             </figcaption>
             <a href="https://youtu.be/4LGcwDliacE"></a>
         </div>
@@ -103,7 +120,7 @@
                 <i class="fa-regular fa-clock"></i>
               119 min
               </span>
-              <a href="#" class="buttonitens">saiba mais</a>
+              <a href="filmes.html#thor" class="buttonitens">saiba mais</a>
             </figcaption>
             <a href="https://youtu.be/OrlwVERYFlQ"></a>
         </div> 
@@ -123,7 +140,7 @@
               <i class="fa-regular fa-clock"></i>
             104 min
             </span>
-            <a href="#" class="buttonitens">saiba mais</a>
+            <a href="filmes.html#ingresso" class="buttonitens">saiba mais</a>
           </figcaption>
           <a href="https://youtu.be/oZ_X5Yup-TQ"></a>
       </div>
@@ -143,7 +160,7 @@
             <i class="fa-regular fa-clock"></i>
           103 min
           </span>
-          <a href="#" class="buttonitens">saiba mais</a>
+          <a href="filmes.html#telefone" class="buttonitens">saiba mais</a>
         </figcaption>
         <a href="https://youtu.be/oZ_X5Yup-TQ"></a>
     </div>
@@ -163,7 +180,7 @@
           <i class="fa-regular fa-clock"></i>
         92 min
         </span>
-        <a href="#" class="buttonitens">saiba mais</a>
+        <a href="filmes.html#pitada" class="buttonitens">saiba mais</a>
       </figcaption>
       <a href="https://youtu.be/oZ_X5Yup-TQ"></a>
   </div> 
@@ -183,7 +200,7 @@
         <i class="fa-regular fa-clock"></i>
         162 min
       </span>
-      <a href="#" class="buttonitens">saiba mais</a>
+      <a href="filmes.html#avatar" class="buttonitens">saiba mais</a>
     </figcaption>
     <a href="https://youtu.be/oZ_X5Yup-TQ"></a>
 </div> 
@@ -203,7 +220,7 @@
       <i class="fa-regular fa-clock"></i>
       160 min
     </span>
-    <a href="#" class="buttonitens">saiba mais</a>
+    <a href="filmes.html#avatar2" class="buttonitens">saiba mais</a>
   </figcaption>
   <a href="https://www.20thcenturystudios.com.br/avatar-o-caminho-da-agua-teaser-trailer-oficial"></a>
 </div> 
