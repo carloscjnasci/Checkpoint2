@@ -13,15 +13,15 @@ body {
   text-align: left;
   background-color: #000000
 }
-  #menu {
-    background-color: rgba(116, 0, 0.6) !important;
-    padding: 1rem 1rem;
-    transition: all 500ms linear;
-  }
-  #menu.ativo {
-    background-color: rgba(0, 0, 0, 0.8) !important;
-    padding: .4rem 1rem;
-  }
+#menu {
+  background-color: rgba(116, 0, 0.6) !important;
+  padding: 1rem 1rem;
+  transition: all 500ms linear;
+}
+#menu.ativo {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  padding: .4rem 1rem;
+}
 
 html {
   line-height: 1.15;

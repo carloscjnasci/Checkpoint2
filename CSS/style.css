@@ -70,15 +70,17 @@ section {
 
 #welcome {
   padding: 30px 13%;
-  height: 800px;
+  height: 820px;
 }
 
 #welcome h1 {
+  align-items: center;
   text-align: left;
   text-shadow: 2px 3px 4px rgba(0, 0, 0, 1.0);
 }
 
 #welcome p {
+  align-items: center;
   text-align: left;
   text-shadow: 2px 3px 4px rgba(0, 0, 0, 1.0);
 }
@@ -92,6 +94,7 @@ section {
   display: inline-block;
   box-shadow: 2px 3px 4px rgba(0, 0, 0, 1.0);
   font-size: 1.3em;
+  align-items: center;
 }
 
 .botao:hover {
@@ -105,7 +108,10 @@ section {
 .nav ul {
   display: none;
 }
-
+#Filmess{
+  height: 60px;
+  background-color: rgb(234, 234, 234);
+}
 #Filmes {
 
   font: 700 4em/1 "Oswald", sans-serif;
@@ -113,6 +119,7 @@ section {
   padding: .25em 0 .325em;
   display: block;
   margin: 0 auto;
+  margin-bottom: 30px;
   text-shadow: 0 0 80px rgba(255, 255, 255, .5);
 
   /* Clip Background Image */
@@ -231,12 +238,12 @@ footer img {
 }
 
 /* para Celular */
-@media only screen and (max-width: 465px) and (min-width: 375px) {
+@media only screen and (max-width: 768px) and (min-width: 375px) {
 
   #welcome h1 {
     text-align: start;
     margin: 4em 0 0;
-    font-size: 64px;
+    font-size: 59px;
     font-weight: bold;
     color: #FFC200;
   }

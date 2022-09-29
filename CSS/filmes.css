@@ -5,6 +5,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* base estilo */
+
 body {
   position: relative;
   background-color: black;
@@ -15,19 +18,6 @@ body {
   flex-direction: column;
   align-items: center;
 }
-header {
-  position: fixed;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  padding: 25px 20px;
-}
-.nav ul li a {
-  display: flex;
-  text-decoration: none;
-  color: black;
-}
-
 html{
   scroll-behavior: smooth;
 }
@@ -35,13 +25,16 @@ html{
 main {
   padding-top: 150px;
   width: 1500px;
-
   background-color: rgb(234, 234, 234);
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   padding-bottom: 20px;
+}
+#minionss{
+  width: 0%;
+  height: 0px;
 }
 #orfa{
   width: 100%;
@@ -79,16 +72,14 @@ main {
   height: 150px;
   background-color: black;
 }
-
 .banner {
   width: 100%;
   height: 500px;
-  
+  margin-top: 20px;
 }
 .foto-filme > img {
   width: 100%;
   height: 500px;
-
 }
 .title {
   display: flex;
@@ -113,10 +104,12 @@ main {
     font-size: 20px;
 }
 .video {
-    width: 900px;
-    height: 550px;
+    width: 850px;
+    height: 450px;
     display: flex;
     align-items: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
 }
 iframe {
   width: 900px;
@@ -155,11 +148,6 @@ footer img {
   width: 24px;
 }
 
-.copyright {
-  grid-column: 1/4;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 0.9em;
-}
 footer{
     width: 100%;
     display: flex;
@@ -173,19 +161,6 @@ footer .desenvolvedores{
     color: rgb(173, 169, 169);
     font-size: 0.7em;
 }
-footer .social{
-    grid-column: 7/9;
-    display: flex;
-    justify-content: center;
-
-}
-footer li{
-    display: flex;
-    margin: 0 6px;
-}
-footer img{
-    width: 24px;
-}
 .rodape .aluno {
     color: rgb(173, 169, 169);
     padding: 5px;
@@ -193,11 +168,11 @@ footer img{
 .social li a {
     text-align: center;
 }
-.copyright{
-    grid-column: 1/4;
-    color: rgb(173, 169, 169);
-    font-size: 0.9em;
-  }
+.copyright {
+  grid-column: 1/4;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9em;
+}
 
   /* para Celular */  
   @media screen and (min-width: 463px){
@@ -222,7 +197,13 @@ footer img{
       justify-content: center;
       background-size: 20%;
     }
-  
+      .desenvolvedores p {
+      font-size: 15px;
+    }
+    .responsaveis p {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 12px;
+    }
     .copyright {
       background-color: #000000;
       padding: 10px 0 20px 0;
@@ -230,20 +211,6 @@ footer img{
       flex-direction: column;
       align-items: center;
     }
-  
-    .desenvolvedores p {
-      font-size: 15px;
-    }
-  
-    .responsaveis p {
-      color: rgba(255, 255, 255, 0.5);
-      font-size: 12px;
-    }
-  
-    .copyright {
-      font-size: 12px;
-    }
-  }
   
   /* para tablet e laptop */
   @media screen and (min-width: 960px){
@@ -253,21 +220,6 @@ footer img{
     }
     .convite{
       margin: 20px 0;
-    }
-    .nav{
-      padding: 0 20px;
-    }
-    .nav h1{
-      grid-column: 1/3;
-    }
-    .nav ul{
-      display: flex;
-      grid-column: 6/9;
-      justify-content: flex-end;
-      align-self: center;
-    }
-    .nav li{
-      margin-left: 20px;
     }
     .welcome-text{
       grid-column: 1/5;
@@ -285,7 +237,6 @@ footer img{
       margin: 0 auto;
       width: 100%;
     }
-
     .copyright {
       margin: 20px 0px 10px 20px;
       font-size: 12px;
@@ -293,28 +244,17 @@ footer img{
   }
   
   /* para desktop */
-    @media screen and (min-width: 1200px){
+    @media screen and (min-width: 1440px){
   
       header {
         position: absolute;
-        top: 0;
-        width: 7%;
-        display: flex;
-        justify-content: space-between;
-        margin: 0 200px;
-        padding: 20px 20px;
-        background-image:
-        linear-gradient(to bottom, rgb(79, 3, 3), rgb(32, 2, 2));
       }
-    .nav{
-      padding: 0;
-    }
 
     main {
       padding: 127px 200px 0px
     }
-    #minion{
-      padding: 0px 1500px 0px
+    #minionss{
+      padding: 0px 0px 0px
     }
     #orfa{
       padding: 0px 1500px 0px
