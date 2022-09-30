@@ -18,6 +18,9 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
+/* base estilo */
+
 html{
   scroll-behavior: smooth;
 }
@@ -98,10 +101,12 @@ main {
 .title h1 {
   width: 90%;
   font-size: 50px;
+  color: #000000;
 }
 .title p {
     padding: 20px;
     font-size: 20px;
+    color: #000000;
 }
 .video {
     width: 850px;
@@ -244,38 +249,38 @@ footer .desenvolvedores{
   }
   
   /* para desktop */
-    @media screen and (min-width: 1440px){
   
-      header {
-        position: absolute;
-      }
-
+  @media screen and (min-width: 1440px) {
+  
+    /* header {
+      position: absolute;
+      } */
     main {
-      padding: 127px 200px 0px
+      padding: 127px 200px 0px;
     }
     #minionss{
-      padding: 0px 0px 0px
+      padding: 0px 0px 0px;
     }
     #orfa{
-      padding: 0px 1500px 0px
+      padding: 0px 1500px 0px;
     }
     #thor{
-      padding: 0px 1500px 0px
+      padding: 0px 1500px 0px;
     }
     #ingresso{
-      padding: 0px 1500px 0px
+      padding: 0px 1500px 0px;
     }
     #telefone{
-      padding: 0px 1500px 0px
+      padding: 0px 1500px 0px;
     }
     #avatar{
-      padding: 0px 1500px 0px
+      padding: 0px 1500px 0px;
     }
     #pitada{
-      padding: 0px 1500px 0px
+      padding: 0px 1500px 0px;
     }
     #avatar2{
-      padding: 0px 1500px 0px
+      padding: 0px 1500px 0px;
     }
   
     #welcome {
@@ -331,7 +336,7 @@ footer .desenvolvedores{
       display: flex;
       width: 1540px;
       align-items: flex-start;
-      padding: 10px 25px 20px;
+      padding: 10px 29px 20px;
       font-size: 12px;
     }
   }
